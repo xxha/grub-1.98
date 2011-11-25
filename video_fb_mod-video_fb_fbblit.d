@@ -1,0 +1,5 @@
+video_fb_mod-video_fb_fbblit.o: video/fb/fbblit.c include/grub/video_fb.h \
+ include/grub/symbol.h config.h include/grub/types.h \
+ include/grub/cpu/types.h include/grub/err.h include/grub/video.h \
+ include/grub/fbblit.h include/grub/fbutil.h include/grub/misc.h \
+ /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdarg.h
