@@ -1,0 +1,2 @@
+grub_serial_fini serial
+grub_serial_init serial

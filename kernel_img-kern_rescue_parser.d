@@ -3,5 +3,5 @@ kernel_img-kern_rescue_parser.o: kern/rescue_parser.c \
  include/grub/symbol.h include/grub/env.h include/grub/err.h \
  include/grub/menu.h include/grub/parser.h include/grub/handler.h \
  include/grub/list.h include/grub/misc.h \
- /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h include/grub/reader.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h include/grub/reader.h \
  include/grub/command.h

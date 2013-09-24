@@ -1,0 +1,11 @@
+vga
+grub_vga_set_mode
+grub_memmove
+grub_font_get
+grub_memset
+grub_term_outputs_disabled
+grub_term_outputs
+grub_putchar
+grub_error
+grub_list_remove
+grub_list_push

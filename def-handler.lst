@@ -1,0 +1,2 @@
+grub_handler_fini handler
+grub_handler_init handler

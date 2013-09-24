@@ -1,0 +1,11 @@
+grub_terminfo_gotoxy terminfo
+grub_terminfo_get_current terminfo
+grub_terminfo_reverse_video_on terminfo
+grub_terminfo_cls terminfo
+grub_terminfo_fini terminfo
+grub_terminfo_tparm terminfo
+grub_terminfo_cursor_off terminfo
+grub_terminfo_set_current terminfo
+grub_terminfo_cursor_on terminfo
+grub_terminfo_reverse_video_off terminfo
+grub_terminfo_init terminfo

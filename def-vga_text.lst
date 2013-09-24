@@ -1,0 +1,10 @@
+grub_console_cur_color vga_text
+grub_console_getcolor vga_text
+grub_console_getcharwidth vga_text
+grub_console_setcolorstate vga_text
+grub_console_getwh vga_text
+grub_vga_text_init vga_text
+grub_vga_text_fini vga_text
+grub_console_setcolor vga_text
+grub_console_real_putchar vga_text
+grub_console_putchar vga_text

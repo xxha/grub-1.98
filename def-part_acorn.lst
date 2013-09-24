@@ -1,0 +1,2 @@
+grub_acorn_partition_map_init part_acorn
+grub_acorn_partition_map_fini part_acorn

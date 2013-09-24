@@ -1,0 +1,2 @@
+grub_gpt_partition_map_init part_gpt
+grub_gpt_partition_map_fini part_gpt

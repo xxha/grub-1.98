@@ -1,0 +1,2 @@
+grub_pc_partition_map_init part_msdos
+grub_pc_partition_map_fini part_msdos

@@ -1,0 +1,2 @@
+grub_video_reader_jpeg_fini jpeg
+grub_video_reader_jpeg_init jpeg

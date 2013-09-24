@@ -4,4 +4,4 @@ xnu_mod-loader_macho32.o: loader/macho32.c include/grub/cpu/macho.h \
  include/grub/symbol.h include/grub/elf.h include/grub/file.h \
  include/grub/device.h include/grub/fs.h loader/machoXX.c \
  include/grub/mm.h include/grub/misc.h \
- /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h

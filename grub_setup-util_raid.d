@@ -1,35 +1,52 @@
 grub_setup-util_raid.o: util/raid.c include/grub/util/misc.h \
  /usr/include/stdlib.h /usr/include/features.h \
- /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
- /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-32.h \
- /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stddef.h \
- /usr/include/sys/types.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/time.h /usr/include/endian.h \
- /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
- gnulib/alloca.h /usr/include/stdio.h /usr/include/libio.h \
- /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/include/setjmp.h /usr/include/bits/setjmp.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/confname.h \
- gnulib/getopt.h config.h include/grub/types.h include/grub/cpu/types.h \
- include/grub/util/raid.h /usr/include/string.h /usr/include/xlocale.h \
- /usr/include/fcntl.h /usr/include/bits/fcntl.h /usr/include/sys/ioctl.h \
- /usr/include/bits/ioctls.h /usr/include/asm/ioctls.h \
+ /usr/include/i386-linux-gnu/bits/predefs.h \
+ /usr/include/i386-linux-gnu/sys/cdefs.h \
+ /usr/include/i386-linux-gnu/bits/wordsize.h \
+ /usr/include/i386-linux-gnu/gnu/stubs.h \
+ /usr/include/i386-linux-gnu/gnu/stubs-32.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
+ /usr/include/i386-linux-gnu/bits/waitflags.h \
+ /usr/include/i386-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/sys/types.h \
+ /usr/include/i386-linux-gnu/bits/types.h \
+ /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/time.h \
+ /usr/include/i386-linux-gnu/sys/select.h \
+ /usr/include/i386-linux-gnu/bits/select.h \
+ /usr/include/i386-linux-gnu/bits/sigset.h \
+ /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/sys/sysmacros.h \
+ /usr/include/i386-linux-gnu/bits/pthreadtypes.h gnulib/alloca.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/i386-linux-gnu/bits/stdio_lim.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/setjmp.h \
+ /usr/include/i386-linux-gnu/bits/setjmp.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ /usr/include/i386-linux-gnu/bits/environments.h \
+ /usr/include/i386-linux-gnu/bits/confname.h gnulib/getopt.h config.h \
+ include/grub/types.h include/grub/cpu/types.h include/grub/util/raid.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/fcntl.h \
+ /usr/include/i386-linux-gnu/bits/fcntl.h \
+ /usr/include/i386-linux-gnu/bits/stat.h \
+ /usr/include/i386-linux-gnu/sys/ioctl.h \
+ /usr/include/i386-linux-gnu/bits/ioctls.h \
+ /usr/include/i386-linux-gnu/asm/ioctls.h \
  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
- /usr/include/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
- /usr/include/bits/ioctl-types.h /usr/include/sys/ttydefaults.h \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/linux/types.h /usr/include/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/asm/bitsperlong.h /usr/include/asm-generic/bitsperlong.h \
- /usr/include/linux/posix_types.h /usr/include/linux/stddef.h \
- /usr/include/asm/posix_types.h /usr/include/asm/posix_types_32.h \
+ /usr/include/i386-linux-gnu/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
+ /usr/include/i386-linux-gnu/bits/ioctl-types.h \
+ /usr/include/i386-linux-gnu/sys/ttydefaults.h /usr/include/errno.h \
+ /usr/include/i386-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/i386-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/linux/types.h \
+ /usr/include/i386-linux-gnu/asm/types.h /usr/include/asm-generic/types.h \
+ /usr/include/asm-generic/int-ll64.h \
+ /usr/include/i386-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/i386-linux-gnu/asm/posix_types.h \
+ /usr/include/i386-linux-gnu/asm/posix_types_32.h \
  /usr/include/linux/major.h /usr/include/linux/raid/md_p.h \
  /usr/include/linux/raid/md_u.h

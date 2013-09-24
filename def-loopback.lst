@@ -1,0 +1,2 @@
+grub_loop_init loopback
+grub_loop_fini loopback

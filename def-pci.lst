@@ -1,0 +1,2 @@
+grub_pci_make_address pci
+grub_pci_iterate pci

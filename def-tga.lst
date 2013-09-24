@@ -1,0 +1,2 @@
+grub_video_reader_tga_fini tga
+grub_video_reader_tga_init tga

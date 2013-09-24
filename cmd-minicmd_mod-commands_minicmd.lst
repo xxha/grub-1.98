@@ -1,0 +1,8 @@
+cat: minicmd
+help: minicmd
+root: minicmd
+dump: minicmd
+rmmod: minicmd
+lsmod: minicmd
+exit: minicmd
+clear: minicmd

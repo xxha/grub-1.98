@@ -1,0 +1,16 @@
+cat
+grub_errno
+grub_getkey
+grub_gzfile_open
+grub_register_command_prio
+grub_printf
+grub_unregister_command
+grub_file_read
+grub_checkkey
+grub_refresh
+grub_file_close
+grub_isspace
+grub_setcolorstate
+grub_putchar
+grub_error
+grub_isprint

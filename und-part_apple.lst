@@ -1,0 +1,12 @@
+part_apple
+grub_partition_map_unregister
+grub_xasprintf
+grub_memmove
+grub_disk_read
+grub_errno
+grub_partition_map_register
+grub_malloc
+grub_real_dprintf
+grub_error
+grub_free
+grub_strtoul

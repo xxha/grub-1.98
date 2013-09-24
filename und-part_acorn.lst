@@ -1,0 +1,9 @@
+part_acorn
+grub_partition_map_unregister
+grub_xasprintf
+grub_disk_read
+grub_errno
+grub_partition_map_register
+grub_malloc
+grub_error
+grub_strtoul

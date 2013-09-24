@@ -59,7 +59,7 @@ cat <<EOF
     {
 EOF
 
-$CC  -Os -DGRUB_MACHINE_PCBIOS=1 -Wall -W -Wshadow -Wpointer-arith -Wmissing-prototypes                -Wundef -Wstrict-prototypes -g -falign-jumps=1 -falign-loops=1 -falign-functions=1 -mno-mmx -mno-sse -mno-sse2 -mno-3dnow -fno-dwarf2-cfi-asm -m32 -fno-stack-protector -mno-stack-arg-probe -Werror -DGRUB_SYMBOL_GENERATOR=1 -E -I. -Iinclude -I"$srcdir/include" $* \
+$CC  -Os -DGRUB_MACHINE_PCBIOS=1 -Wall -W -Wshadow -Wpointer-arith -Wmissing-prototypes                -Wundef -Wstrict-prototypes -g -falign-jumps=1 -falign-loops=1 -falign-functions=1 -mno-mmx -mno-sse -mno-sse2 -mno-3dnow -fno-dwarf2-cfi-asm -m32 -fno-stack-protector -mno-stack-arg-probe -DGRUB_SYMBOL_GENERATOR=1 -E -I. -Iinclude -I"$srcdir/include" $* \
   | grep -v '^#' \
   | sed -n \
         -e '/EXPORT_FUNC *([a-zA-Z0-9_]*)/{s/.*EXPORT_FUNC *(\([a-zA-Z0-9_]*\)).*/      {"\1", \1},/;p;}' \

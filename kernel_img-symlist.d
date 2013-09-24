@@ -6,7 +6,7 @@ kernel_img-symlist.o: symlist.c include/grub/boot.h include/grub/cache.h \
  include/grub/file.h include/grub/fs.h include/grub/env.h \
  include/grub/menu.h include/grub/err.h include/grub/file.h \
  include/grub/fs.h include/grub/kernel.h include/grub/loader.h \
- include/grub/misc.h /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
+ include/grub/misc.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  include/grub/mm.h include/grub/net.h include/grub/parser.h \
  include/grub/handler.h include/grub/list.h include/grub/misc.h \
  include/grub/reader.h include/grub/partition.h include/grub/dl.h \

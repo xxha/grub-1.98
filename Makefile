@@ -23,7 +23,7 @@ srcdir = .
 builddir = .
 top_srcdir = .
 
-prefix = /usr/local
+prefix = /home/xxha/git-server/open-source/grub-1.98/install
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin
@@ -44,9 +44,9 @@ pkglibdir =  $(libdir)/`echo grub/$(target_cpu)-$(platform) | sed '$(transform)'
 # Internationalization library.
 LIBINTL = 
 
-XGETTEXT = :
-MSGMERGE = :
-MSGFMT = :
+XGETTEXT = /usr/bin/xgettext
+MSGMERGE = /usr/bin/msgmerge
+MSGFMT = /usr/bin/msgfmt
 
 LINGUAS = $(shell for i in $(srcdir)/po/*.po ; do \
 			if test -e $$i ; then echo $$i ; fi ; \
@@ -84,7 +84,7 @@ LDFLAGS =  $(LIBS)
 CPPFLAGS =  -I$(builddir) -I$(builddir)/include -I$(srcdir)/gnulib -I$(srcdir)/include -Wall -W \
 	 -DGRUB_LIBDIR=\"$(pkglibdir)\" -DLOCALEDIR=\"$(localedir)\"
 TARGET_CC = gcc
-TARGET_CFLAGS =  -Os -DGRUB_MACHINE_PCBIOS=1 -Wall -W -Wshadow -Wpointer-arith -Wmissing-prototypes                -Wundef -Wstrict-prototypes -g -falign-jumps=1 -falign-loops=1 -falign-functions=1 -mno-mmx -mno-sse -mno-sse2 -mno-3dnow -fno-dwarf2-cfi-asm -m32 -fno-stack-protector -mno-stack-arg-probe -Werror
+TARGET_CFLAGS =  -Os -DGRUB_MACHINE_PCBIOS=1 -Wall -W -Wshadow -Wpointer-arith -Wmissing-prototypes                -Wundef -Wstrict-prototypes -g -falign-jumps=1 -falign-loops=1 -falign-functions=1 -mno-mmx -mno-sse -mno-sse2 -mno-3dnow -fno-dwarf2-cfi-asm -m32 -fno-stack-protector -mno-stack-arg-probe
 TARGET_ASFLAGS =  -DGRUB_MACHINE_PCBIOS=1
 TARGET_MODULE_FORMAT = elf32
 TARGET_APPLE_CC = 0
