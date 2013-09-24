@@ -7,7 +7,7 @@ xnu_mod-loader_i386_xnu.o: loader/i386/xnu.c include/grub/env.h \
  include/grub/cpu/relocator.h include/grub/mm.h include/grub/loader.h \
  include/grub/autoefi.h include/grub/efiemu/efiemu.h \
  include/grub/i386/tsc.h include/grub/i386/pit.h include/grub/misc.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdarg.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
  include/grub/charset.h include/grub/term.h include/grub/handler.h \
  include/grub/list.h include/grub/command.h include/grub/gzio.h \
  include/grub/i18n.h

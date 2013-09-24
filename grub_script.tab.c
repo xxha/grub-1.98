@@ -1,9 +1,10 @@
-/* A Bison parser, made by GNU Bison 2.4.3.  */
+
+/* A Bison parser, made by GNU Bison 2.4.1.  */
 
 /* Skeleton implementation for Bison's Yacc-like parsers in C
    
-      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006,
-   2009, 2010 Free Software Foundation, Inc.
+      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+   Free Software Foundation, Inc.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -45,7 +46,7 @@
 #define YYBISON 1
 
 /* Bison version.  */
-#define YYBISON_VERSION "2.4.3"
+#define YYBISON_VERSION "2.4.1"
 
 /* Skeleton name.  */
 #define YYSKELETON_NAME "yacc.c"
@@ -88,7 +89,7 @@
 
 
 /* Line 189 of yacc.c  */
-#line 92 "grub_script.tab.c"
+#line 93 "grub_script.tab.c"
 
 /* Enabling traces.  */
 #ifndef YYDEBUG
@@ -143,7 +144,7 @@ typedef union YYSTYPE
 
 
 /* Line 214 of yacc.c  */
-#line 147 "grub_script.tab.c"
+#line 148 "grub_script.tab.c"
 } YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
@@ -155,7 +156,7 @@ typedef union YYSTYPE
 
 
 /* Line 264 of yacc.c  */
-#line 159 "grub_script.tab.c"
+#line 160 "grub_script.tab.c"
 
 #ifdef short
 # undef short
@@ -205,7 +206,7 @@ typedef short int yytype_int16;
 #define YYSIZE_MAXIMUM ((YYSIZE_T) -1)
 
 #ifndef YY_
-# if defined YYENABLE_NLS && YYENABLE_NLS
+# if YYENABLE_NLS
 #  if ENABLE_NLS
 #   include <libintl.h> /* INFRINGES ON USER NAME SPACE */
 #   define YY_(msgid) dgettext ("bison-runtime", msgid)
@@ -591,18 +592,9 @@ static const yytype_uint8 yystos[] =
 
 /* Like YYERROR except do call yyerror.  This remains here temporarily
    to ease the transition to the new meaning of YYERROR, for GCC.
-   Once GCC version 2 has supplanted version 1, this can go.  However,
-   YYFAIL appears to be in use.  Nevertheless, it is formally deprecated
-   in Bison 2.4.2's NEWS entry, where a plan to phase it out is
-   discussed.  */
+   Once GCC version 2 has supplanted version 1, this can go.  */
 
 #define YYFAIL		goto yyerrlab
-#if defined YYFAIL
-  /* This is here to suppress warnings from the GCC cpp's
-     -Wunused-macros.  Normally we don't worry about that warning, but
-     some users do, and we want to make it easy for users to remove
-     YYFAIL uses, which will produce warnings from Bison 2.5.  */
-#endif
 
 #define YYRECOVERING()  (!!yyerrstatus)
 
@@ -659,7 +651,7 @@ while (YYID (0))
    we won't break user code: when these are the locations we know.  */
 
 #ifndef YY_LOCATION_PRINT
-# if defined YYLTYPE_IS_TRIVIAL && YYLTYPE_IS_TRIVIAL
+# if YYLTYPE_IS_TRIVIAL
 #  define YY_LOCATION_PRINT(File, Loc)			\
      fprintf (File, "%d.%d-%d.%d",			\
 	      (Loc).first_line, (Loc).first_column,	\
@@ -1403,14 +1395,14 @@ yyreduce:
     {
         case 2:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 56 "./script/parser.y"
     { state->err = 0; ;}
     break;
 
   case 3:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 57 "./script/parser.y"
     {
 		    state->parsed = (yyvsp[(2) - (2)].cmd);
@@ -1419,42 +1411,42 @@ yyreduce:
 
   case 4:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 62 "./script/parser.y"
     { (yyval.cmd) = 0; ;}
     break;
 
   case 5:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 63 "./script/parser.y"
     { (yyval.cmd) = 0; ;}
     break;
 
   case 6:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 64 "./script/parser.y"
     { (yyval.cmd) = (yyvsp[(1) - (1)].cmd); ;}
     break;
 
   case 7:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 65 "./script/parser.y"
     { (yyval.cmd) = 0; ;}
     break;
 
   case 8:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 66 "./script/parser.y"
     { (yyval.cmd) = (yyvsp[(1) - (2)].cmd); ;}
     break;
 
   case 9:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 68 "./script/parser.y"
     {
 		    (yyval.cmd) = 0;
@@ -1466,7 +1458,7 @@ yyreduce:
 
   case 15:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 88 "./script/parser.y"
     {
 		    (yyval.arglist) = grub_script_add_arglist (state, 0, (yyvsp[(1) - (1)].arg));
@@ -1475,7 +1467,7 @@ yyreduce:
 
   case 16:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 92 "./script/parser.y"
     {
 		    (yyval.arglist) = grub_script_add_arglist (state, (yyvsp[(1) - (2)].arglist), (yyvsp[(2) - (2)].arg));
@@ -1484,7 +1476,7 @@ yyreduce:
 
   case 17:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 98 "./script/parser.y"
     {
 		    (yyval.cmd) = grub_script_create_cmdline (state, (yyvsp[(1) - (1)].arglist));
@@ -1493,28 +1485,28 @@ yyreduce:
 
   case 18:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 104 "./script/parser.y"
     { (yyval.cmd) = (yyvsp[(1) - (2)].cmd); ;}
     break;
 
   case 19:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 105 "./script/parser.y"
     { (yyval.cmd) = (yyvsp[(1) - (2)].cmd); ;}
     break;
 
   case 20:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 106 "./script/parser.y"
     { (yyval.cmd) = (yyvsp[(1) - (2)].cmd); ;}
     break;
 
   case 21:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 111 "./script/parser.y"
     {
 		    (yyval.cmd) = grub_script_add_cmd (state, 0, (yyvsp[(1) - (1)].cmd));
@@ -1523,7 +1515,7 @@ yyreduce:
 
   case 22:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 115 "./script/parser.y"
     {
 		    struct grub_script_cmdblock *cmd;
@@ -1534,7 +1526,7 @@ yyreduce:
 
   case 23:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 129 "./script/parser.y"
     {
 		    grub_script_lexer_ref (state->lexerstate);
@@ -1543,7 +1535,7 @@ yyreduce:
 
   case 24:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 132 "./script/parser.y"
     {
 		    /* The first part of the function was recognized.
@@ -1555,7 +1547,7 @@ yyreduce:
 
   case 25:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 138 "./script/parser.y"
     {
 		    struct grub_script *script;
@@ -1573,7 +1565,7 @@ yyreduce:
 
   case 26:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 155 "./script/parser.y"
     {
 		    grub_script_lexer_ref (state->lexerstate);
@@ -1582,7 +1574,7 @@ yyreduce:
 
   case 27:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 159 "./script/parser.y"
     {
 		    grub_script_lexer_deref (state->lexerstate);
@@ -1592,7 +1584,7 @@ yyreduce:
 
   case 28:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 167 "./script/parser.y"
     {
 		    grub_script_lexer_ref (state->lexerstate);
@@ -1601,7 +1593,7 @@ yyreduce:
 
   case 29:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 170 "./script/parser.y"
     {
 		    grub_script_lexer_record_start (state->lexerstate);
@@ -1610,7 +1602,7 @@ yyreduce:
 
   case 30:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 173 "./script/parser.y"
     {
 		    char *menu_entry;
@@ -1622,14 +1614,14 @@ yyreduce:
 
   case 31:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 183 "./script/parser.y"
     { grub_script_lexer_ref (state->lexerstate); ;}
     break;
 
   case 32:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 188 "./script/parser.y"
     {
 		    (yyval.cmd) = grub_script_create_cmdif (state, (yyvsp[(2) - (6)].cmd), (yyvsp[(5) - (6)].cmd), 0);
@@ -1639,7 +1631,7 @@ yyreduce:
 
   case 33:
 
-/* Line 1464 of yacc.c  */
+/* Line 1455 of yacc.c  */
 #line 193 "./script/parser.y"
     {
 		    (yyval.cmd) = grub_script_create_cmdif (state, (yyvsp[(2) - (9)].cmd), (yyvsp[(5) - (9)].cmd), (yyvsp[(8) - (9)].cmd));
@@ -1649,8 +1641,8 @@ yyreduce:
 
 
 
-/* Line 1464 of yacc.c  */
-#line 1654 "grub_script.tab.c"
+/* Line 1455 of yacc.c  */
+#line 1646 "grub_script.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);

@@ -50,7 +50,7 @@
 #define HAVE_DIRENT_H 1
 
 /* Define to 1 if you have the <ft2build.h> header file. */
-#define HAVE_FT2BUILD_H 1
+/* #undef HAVE_FT2BUILD_H */
 
 /* Define to 1 if you have the `getgid' function. */
 #define HAVE_GETGID 1

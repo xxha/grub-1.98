@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2009-11-17 12:26+0100\n"
 "Last-Translator: Robert Millan <rmh.grub@aybabtu.com>\n"
 "Language-Team: None <no-team-yet@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 
 #: commands/acpi.c:40
 msgid "Don't load host tables specified by comma-separated list."

@@ -23,7 +23,7 @@ srcdir = .
 builddir = .
 top_srcdir = .
 
-prefix = /tmp/grub-1.98
+prefix = /usr/local
 exec_prefix = ${prefix}
 
 bindir = ${exec_prefix}/bin
@@ -44,9 +44,9 @@ pkglibdir =  $(libdir)/`echo grub/$(target_cpu)-$(platform) | sed '$(transform)'
 # Internationalization library.
 LIBINTL = 
 
-XGETTEXT = /usr/bin/xgettext
-MSGMERGE = /usr/bin/msgmerge
-MSGFMT = /usr/bin/msgfmt
+XGETTEXT = :
+MSGMERGE = :
+MSGFMT = :
 
 LINGUAS = $(shell for i in $(srcdir)/po/*.po ; do \
 			if test -e $$i ; then echo $$i ; fi ; \
@@ -84,12 +84,12 @@ LDFLAGS =  $(LIBS)
 CPPFLAGS =  -I$(builddir) -I$(builddir)/include -I$(srcdir)/gnulib -I$(srcdir)/include -Wall -W \
 	 -DGRUB_LIBDIR=\"$(pkglibdir)\" -DLOCALEDIR=\"$(localedir)\"
 TARGET_CC = gcc
-TARGET_CFLAGS =  -Os -DGRUB_MACHINE_PCBIOS=1 -Wall -W -Wshadow -Wpointer-arith -Wmissing-prototypes                -Wundef -Wstrict-prototypes -g -falign-jumps=1 -falign-loops=1 -falign-functions=1 -mno-mmx -mno-sse -mno-sse2 -mno-3dnow -fno-dwarf2-cfi-asm -m32 -fno-stack-protector -mno-stack-arg-probe# -Werror
+TARGET_CFLAGS =  -Os -DGRUB_MACHINE_PCBIOS=1 -Wall -W -Wshadow -Wpointer-arith -Wmissing-prototypes                -Wundef -Wstrict-prototypes -g -falign-jumps=1 -falign-loops=1 -falign-functions=1 -mno-mmx -mno-sse -mno-sse2 -mno-3dnow -fno-dwarf2-cfi-asm -m32 -fno-stack-protector -mno-stack-arg-probe -Werror
 TARGET_ASFLAGS =  -DGRUB_MACHINE_PCBIOS=1
 TARGET_MODULE_FORMAT = elf32
 TARGET_APPLE_CC = 0
 OBJCONV = 
-TARGET_CPPFLAGS =  -I$(srcdir)/include -I$(builddir) -I$(builddir)/include \
+TARGET_CPPFLAGS =  -nostdinc -isystem /usr/lib/gcc/i686-linux-gnu/4.6/include -I$(srcdir)/include -I$(builddir) -I$(builddir)/include \
 	-Wall -W
 TARGET_LDFLAGS =  -m32 -Wl,--build-id=none
 TARGET_IMG_LDSCRIPT = 
@@ -101,7 +101,7 @@ OBJCOPY = objcopy
 STRIP = strip
 NM = nm
 RUBY = 
-MAKEINFO = /usr/bin/makeinfo
+MAKEINFO = 
 ifeq (, $(MAKEINFO))
 MAKEINFO = true
 endif
@@ -111,7 +111,7 @@ HELP2MAN = true
 else
 HELP2MAN := LANG=C $(HELP2MAN) --no-info --source=FSF
 endif
-AWK = gawk
+AWK = mawk
 LIBCURSES = 
 LIBUSB = 
 LIBSDL = 
@@ -125,10 +125,10 @@ enable_grub_emu_sdl =
 enable_grub_emu_pci = 
 enable_grub_fstest = yes
 enable_grub_pe2elf = @enable_grub_pe2elf@
-enable_grub_mkfont = yes
-freetype_cflags = -I/usr/include/freetype2
-freetype_libs = -lfreetype
-enable_efiemu = no
+enable_grub_mkfont = no
+freetype_cflags = 
+freetype_libs = 
+enable_efiemu = yes
 
 ### General variables.
 

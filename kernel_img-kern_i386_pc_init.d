@@ -5,7 +5,7 @@ kernel_img-kern_i386_pc_init.o: kern/i386/pc/init.c include/grub/kernel.h \
  include/grub/err.h include/grub/memory.h include/grub/i386/memory.h \
  include/grub/machine/console.h include/grub/term.h \
  include/grub/handler.h include/grub/list.h include/grub/misc.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdarg.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
  include/grub/i386/vga_common.h include/grub/machine/kernel.h \
  include/grub/dl.h include/grub/elf.h include/grub/loader.h \
  include/grub/file.h include/grub/device.h include/grub/fs.h \

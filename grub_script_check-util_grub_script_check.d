@@ -1,11 +1,12 @@
 grub_script_check-util_grub_script_check.o: util/grub-script-check.c \
  config.h include/grub/types.h include/grub/cpu/types.h include/grub/mm.h \
  include/grub/symbol.h include/grub/misc.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdarg.h include/grub/err.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h include/grub/err.h \
  include/grub/util/misc.h /usr/include/stdlib.h /usr/include/features.h \
- /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stddef.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stddef.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/byteswap.h /usr/include/xlocale.h \

@@ -1,7 +1,6 @@
 gfxmenu_mod-gfxmenu_icon_manager.o: gfxmenu/icon_manager.c \
  include/grub/types.h config.h include/grub/cpu/types.h \
- include/grub/misc.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdarg.h \
+ include/grub/misc.h /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
  include/grub/symbol.h include/grub/err.h include/grub/mm.h \
  include/grub/gui_string_util.h include/grub/gui.h include/grub/video.h \
  include/grub/bitmap.h include/grub/gfxmenu_view.h include/grub/menu.h \

@@ -1,13 +1,13 @@
 grub_mkisofs-util_mkisofs_joliet.o: util/mkisofs/joliet.c config.h \
  util/mkisofs/mkisofs.h /usr/include/stdio.h /usr/include/features.h \
- /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stddef.h \
+ /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-32.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stddef.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdarg.h \
+ /usr/lib/gcc/i486-linux-gnu/4.4.3/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
- /usr/lib/gcc/i686-redhat-linux/4.6.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  util/mkisofs/include/prototyp.h /usr/include/sys/stat.h \
  /usr/include/time.h /usr/include/bits/stat.h /usr/include/locale.h \
@@ -22,4 +22,4 @@ grub_mkisofs-util_mkisofs_joliet.o: util/mkisofs/joliet.c config.h \
  /usr/include/linux/limits.h util/mkisofs/iso9660.h \
  util/mkisofs/defaults.h /usr/include/stdlib.h \
  /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- gnulib/alloca.h /usr/include/bits/timex.h
+ gnulib/alloca.h
